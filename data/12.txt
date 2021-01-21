@@ -1,0 +1,64 @@
+<!DOCTYPE html> <!-- HTML5 ile gelen özellik |Bu sayde html5 ile kod yazdığımızı belirtiriz  -->
+<html lang="en"><!--Sayfa dili zorunlu olmasada belirtmek sağlıklıdır-->
+    <head>
+        <meta charset="utf-8 "> <!-- Türkçe karakter sorunları için kesinlikle belirtilmeli  -->
+        <title>butonlar</title>
+    </head>
+    <body>
+        Seçim işlemi</br>
+        <select name="dil">
+            <option value="css">Css</option>
+            <option value="html">Html</option>
+            <option selected value="js">Js</option>
+        </select>
+
+        </br></br></br>
+        Birden fazla seçim</br>
+        <select name="dil2" multiple>
+            <option value="css">Css</option>
+            <option value="html">Html</option>
+            <option selected value="js">Js</option>
+        </select>
+
+        </br></br></br>
+        Belirli bir sayıda seçim mesel en fazla 2 </br>
+        <select name="dil2" multiple size="2">
+            <option value="css">Css</option>
+            <option value="html">Html</option>
+            <option selected value="js">Js</option>
+        </select>
+        </br></br></br>
+        Options grup örneği</br>
+        <select name="dil2" multiple>
+            <optgroup label="Front-end Dilleri">
+                <option value="css">Css</option>
+                <option value="html">Html</option>
+                <option value="js">Js</option>
+            </optgroup>
+            <optgroup label="Back-end Dilleri">
+                <option value="php">Php</option>
+                <option value="js">Js</option>
+                <option value="python">Python</option>
+            </optgroup>
+        </select>
+
+        </br></br></br>
+        BAŞKA BİR FORM ÖRNEĞİ : textarea</br>
+        <textarea name="hakkinda" id="hk" cols="120" rows="10"></textarea></br>
+        <button type="submit">Yorumu gönder</button>
+        <!--sadece type i submit yaparsak formu gönderiri Örenk olarak button yaptığımızda sadece buton görevi görür-->
+        <button type="reset">Temizle</button>
+        </br></br></br>
+        FORM ELEMANLARINI GRUPLAMA</br>
+        <form action="" name="form" id="form-grub" method="GET">
+            <fieldset>
+                <legend>Giriş Yap</legend>
+                <label for="nick">Kulanıcı adı: </label>
+                <input placeholder="kulanıcı adınız" required id="nick" type="text" value=""></br>
+                <label for="pass">Parola: </label>
+                <input placeholder="parolanız" required minlength="6" maxlength="8" id="pass" type="password" value=""></br>
+                <input type="submit" value="Giris Yap">
+            </fieldset>
+        </form>
+    </body>
+</html>

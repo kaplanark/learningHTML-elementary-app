@@ -1,0 +1,101 @@
+<!DOCTYPE html> <!-- HTML5 ile gelen özellik |Bu sayde html5 ile kod yazdığımızı belirtiriz  -->
+<html lang="tr"><!--Sayfa dili zorunlu olmasada belirtmek sağlıklıdır-->
+    <head>
+        <meta charset="utf-8 "> <!-- Türkçe karakter sorunları için kesinlikle belirtilmeli  -->
+        <title>form-etiketleri</title>
+    </head>
+    <body>
+
+        <form action="" name="form1" id="formSendMenü" method="GET">
+            <!-- action kısmı değerlerin nereye gönderileceğini belirtir boş brakılırsa oluşturulduğu sayfada döner-->
+            
+            <label for="a">ID: </label>
+            <input readonly id="a" type="text" value="541864789"></br>
+            <!--nitelik olarak DİSBLE yazarsak değiştirilemez olur-->
+            <!--mantıklı olan: değiştirilemez sadece okunabilir olsun istersek READONLY-->
+
+            <label for="nick">Kulanıcı adı: </label>
+            <input placeholder="kulanıcı adınız" required id="nick" type="text" value=""></br><!--tetx için-->
+            <!-- 'equared' niteliği imput kısmı dolumu boşmu kontrol eder boş ise uyarı verir-->
+
+            <label for="pass">Parola: </label>
+            <input placeholder="parolanız" required minlength="6" maxlength="8" id="pass" type="password" value=""></br><!--parolalar için-->
+            <!--maxlength ve minlength girdinin karakter sınırlarını belirler-->
+
+            <label for="eposta">E-posta:</label>
+            <input name="eposta" required id="eposta" type="email"></br><!--type="email" eposta doğruluk kontrolu yapar-->
+
+            <!-- NOT: KODA PROGRAMLAMA DİLİ İLE MÜDAHLE EDİLEBİLİR OLMASI İÇİN name BELİRTMEKTE FAYDA VAR-->
+
+            <label for="fl">Dosya seç: </label>
+            <input id="fl" type="file" name="file[]" accept="image/*" multiple></br><!--file için-->
+            <!--
+                accept=" " >>> dosya türünü belirtir
+                image/*   :tüm image türleri
+                video/*  : tüm video türleri
+                audio/*  :tüm audio türleri
+
+                multiple >>> birden fazla dosya seçimi için(attribute)
+                NOT: ÇOKLU DOYA ÖZELİİ EKLENDİĞİNDE NAME SONUNA [] EKLENMELİDİR
+            -->
+
+
+            <label><input required type="checkbox">Kabul ediyorum</label></form>
+            <label><input type="checkbox" checked>Kabul etmiyorum</label></form></br>
+
+            <label><!--radio niteliğinde 1 den fazla bu türden nitelik kulanılacaksa 'name' belirtilmeli bu şekilde sadece biri işaretlenebilir olur-->
+                <input type="radio" name="cinsiyet" value="e">Erkek
+            </label>
+            <label><input type="radio" name="cinsiyet" value="k" checked>Kadın
+            </label></br></br>
+
+            <input type="hidden" name="hid" value="hiddden"> <!--hidden typler sadece arkaplanda gözükür-->
+            
+            <input type="submit" value="Kaydol">
+            <input type="reset" value="Temizle">
+        </form>
+        
+            </br></br></br>
+            <!--HTML5 İLE GELEN İNPUT ÖZELLİKLERİ-->
+            <input type="color"><!--colorbax cıkar-->
+            </br>
+            <input type="date"><!--datebox çıkar-->
+            </br>
+            <input type="datetime-local"><!--datebox çıkar ama takvimli-->
+            </br>
+            <input type="month"><!--au seçimi-->
+            </br>
+            <input type="week"><!--hafta seçimi-->
+            </br>
+            <input type="number" min="0 " max="10">
+            </br>
+            <input type="range" min="1" max="15" step="5"><!--step niteliği kaçar kaçar atracağınıbelirtir-->
+            </br>
+            <input type="search" autofocus><!--autofocus niteliği ile sayfaya giriş yaptığınızda belirtilen yere odaklanır-->
+            </br>
+            <input type="tel">
+            </br>
+            <input type="time">
+            </br>
+            <input type="url"><!-- url kontrolu yapar-->
+        
+            </br></br></br>
+            ---------------------------------DEVAM KISMI-----------------------------------------</br>
+            <input type="text" name="k" autocomplete="off"><!--outocomplate="off" ile öneri vermez artık-->
+            </br>
+
+            <input list="diller" name="diller" form="formSendMenü"> 
+            <!--form iteliği ile yukardaki formdan alınan bilgiler listeye eklenebiliyor-->
+            <!--NOT: form özelliği kulanırken yukardaki formda id ve name belirtmek gerekir-->
+            <datalist id="diller">
+                <option value="HTML">  <!--list menü oluşturma -->
+                <option value="CSS">
+                <option value="JS">
+            </datalist>
+
+            </br></br></br></br>
+            <!-- FORM İŞLEMİNİ YENİ SEKMEDE AÇMA-->
+            <form><input type="submit" value="OpenNewTab" formaction="http://google.com" formtarget="_blank"></form>
+            <!-- yada <form target="_blnk"></form> kulanabilirisn -->
+    </body>
+</html>

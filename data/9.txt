@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8 ">
+        <title>media-etiketleri</title>
+    </head>
+    <body>
+
+        <audio controls loop muted> <!-- controls yapısını kulanmadan js de daha iyi yapılar oluşturulur-->
+            <source src="./data/test.mp3" type="audio/mpeg">
+                Tarayıcınız bu özelliği desteklemiyor
+        </audio>
+
+        </br></br>
+
+        <video width="320" height="240" loop controls poster="./data/video-poster.jpg">
+            <source src="./data/test.mp4" type="video/mp4">
+            <track src="sublite-en.vtt" kind="subtitles" srclang="en" label="İngilizce">
+            <track src="sublite-de.vtt" kind="subtitles" srclang="de" label="Almanca">
+            Tarayıcınız bu özelliği desteklemiyor
+        </video>
+
+        </br>
+    </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en"
+    <head>
+        <meta charset="utf-8 ">
+        <title>tablo-etiketleri</title>
+    </head>
+    <body>
+        <table border="1"> <!-- border niteliği artık kulanılmıyor css ile görsellik katılıyor-->
+            <caption>HARCAMA TABLOSU</caption> <!-- TABLO BAŞLIĞI ETİKETİ-->
+            <thead> <!-- tablo başlığı etiketi-->
+                <tr> <!-- satır etiketi -->
+                    <th style="color: brown;"> <!--başlık stun etiketi -->
+                        İsim Soyisim
+                    </th>
+                    <th style="color: brown;">
+                        Harcama
+                    </th>
+                </tr>
+            </thead>
+            <tbody> <!-- tablo vucudu etiketi -->
+                <tr>
+                    <td> <!--stun etiketi -->
+                        Kaplan Arkan
+                    </td>
+                    <td>
+                        500 TL
+                    </td>
+                    <td rowspan="4">
+                        rowspan kısmı
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Lucy Marcie
+                    </td>
+                    <td>
+                        750 TL
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2"> <!-- colspan ile iki stunu birleştir-->
+                        Toplam Harcama 1250 TL
+                    </td>
+                </tr>
+            </tfoot>
+            
+        </table>
+    </body>
+</html>

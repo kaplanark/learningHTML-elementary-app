@@ -1,0 +1,76 @@
+
+.btn-group {
+  padding: 0.2%;
+  float: left;
+  height: 512px;
+  width: 15%;
+}
+.btn-group .button {
+  display: block;
+  /*border-radius: 4px;*/
+  background-color: #f45112;
+  border: 1px solid white;;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 100%;
+  padding: 6.9%;
+  width: 100%;
+  transition: all 0.5s;
+  cursor: pointer;
+  /*margin: 5px;*/
+}
+
+.btn-group .button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn-group .button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn-group .button:hover span {
+  padding-right: 25px;
+}
+
+.btn-group .button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#ifrArea {
+  height:645px;
+  width:84%;
+  float:right;
+  border: 1px solid gray;
+}
+
+.runit{
+  float: right;
+  background-color: #4CAF50; /* Green */
+  border: 1px solid green;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  height:25px;
+}
+.pack {
+  float: right;
+  background-color: #4CAF50; /* Green */
+  border: 1px solid green;
+  color: white;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  height:21px;
+  width: 72.6%;
+
+}

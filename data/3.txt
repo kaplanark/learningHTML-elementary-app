@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8 "> 
+        <title>HTML Dersleri</title>
+    </head>
+    <body>
+        <p>
+            Pargaraf <b>kalın kısımı</b> paragrafın devamı</br>
+            Pargaraf <b>kalın kısım b etiketi</b> paragrafın devamı
+        </p>
+        <p>
+            Pargaraf <strong>önemli kısımı</strong> paragrafın devamı
+        </p>
+        <!--b etiketi kalın yazmak için kulanılır stron daha çok önem belirtmek için-->
+        <p>
+            Paragraf <i>italik kısım</i> devam</br>
+            Paragraf <em> önemli ksısım</em> devam
+        </p>
+        <p>
+            Paragraf <mark>sarı vurgu kısmı</mark> devamı
+        </p>
+        <p>
+            Pargraf <small>küçük yazı kısmı</small> devamı
+        </p>
+        <p>
+            Paragraf <s>çıkarılan kısım</s> devam </br>
+            Bu gün ki dev indirim bir kurs <del>50 TL</del> değil sadece
+            <ins>25</ins> TL.
+        </p>
+        <p>
+            Merhaba <u>arkdaslae</u> ben Kaplan Arkan <!--kelimeler yanlış ise u ile altı çizilir-->
+        </p>
+        <p>
+            Log<sub>2</sub>4 <!-- sub ile alta indirme-->
+        </p>
+        <p>
+            f<sub>2</sub>(x+12)<!--sup ile üs belirtme-->
+        </p>
+    </body>
+</html>

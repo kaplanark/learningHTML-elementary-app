@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8 ">
+        <title>div-span</title>
+    </head>
+    <body>
+        <div>
+            <!--div etiketi genelde kapsayıcı etiket olarak kulanılmakta-->
+            <div>Blok seviyesinden</div><!--blok seviyesinden bir eleman-->
+            <span>İnlene seviyesinden</span><!--inlene seviyesinden bir eleman-->  
+        </div>
+    </body>
+</html>

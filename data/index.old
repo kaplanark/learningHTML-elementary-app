@@ -1,0 +1,29 @@
+<!DOCTYPE html> <!-- HTML5 ile gelen özellik |Bu sayde html5 ile kod yazdığımızı belirtiriz  -->
+<html lang="en"><!--Sayfa dili zorunlu olmasada belirtmek sağlıklıdır-->
+    <head>
+        <meta charset="utf-8 "> <!-- Türkçe karakter sorunları için kesinlikle belirtilmeli  -->
+        <title>HTML Dersleri</title>
+    </head>
+        <h1>HTML Dersleri</h1>
+    <body>
+        <ol>
+            <li><a href="1-div-span.html" target="_blank">Div ve Span </a></li>
+            <li><a href="2-paragraf-baslık-etiketleri.html" target="_blank">Pragraf ve Başlık Etiketleri </a></li>
+            <li><a href="3-metin-bicimlendirme.html" target="_blank"> Metin Biçimlendirme </a></li>
+            <li><a href="4-alıntılama-etiketleri.html" target="_blank">Alıntılama Etiketleri </a></li>
+            <li><a href="5-link-etiketi.html" target="_blank">Link Etiketi </a></li>
+            <li><a href="6-resim-etiketi.html" target="_blank">Resime Etiketi </a></li>
+            <li><a href="7-tablo-etiketi.html" target="_blank">Tablo Etiketi </a></li>
+            <li><a href="8-listeleme-etiketleri.html" target ="_blank">Listeleme Etiketleri </a></li>
+            <li><a href="9-media-etiketleri.html" target ="_blank">Media Etiketleri </a></li>
+            <li><a href="10-iframe-etiketi.html" target ="_blank">İframe Etiketi </a></li>
+            <li><a href="11-form-etiketleri.html" target="_blamk">Form Etiketleri</a></li>
+            <li><a href="12-butonlar.html" target="_blamk">Butonlar</a></li>
+        </ol>
+    </body>
+</html>
+
+<!--
+ETİKET YAPSI NASILDIR ;
+<etiket nitelik ='değer' yeninitelik ='nitelik' ></etiket>
+-->

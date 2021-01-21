@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8 ">
+        <title>paragraf&baslık etiketleri</title>
+    </head>
+    <body>
+        <p> <!--p etikeleri blog seviyeden etiketlerdir-->
+            Birinci paragraf
+        </p>
+        <p>
+            İkinci paragraf
+        </p>
+        <h1>h1 seviye başlık</h1>
+        <h2>h2 seviye başlık</h2>
+        <h3>h3 seviye başlık</h3>
+        <h4>h4 seviye başlık</h4>
+        <h5>h5 seviye başlık</h5>
+        <h6>h6 seviye başlık</h6>
+    </body>
+</html>
